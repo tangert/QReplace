@@ -92,7 +92,19 @@ class ViewController: UIViewController {
                                           preferredStyle: .alert)
             
             let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            var cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+
             alert.addAction(okAction)
+            
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                if let popoverController = alert.popoverPresentationController {
+                    alert.addAction(cancelAction)
+                    popoverController.sourceView = self.view
+                    popoverController.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+                    popoverController.permittedArrowDirections = []
+                }
+            }
+            
             self.present(alert, animated: true, completion: nil)
         }
     }
@@ -161,20 +173,28 @@ class ViewController: UIViewController {
         DispatchQueue.main.async {
             var alertText = "It looks like your privacy settings are preventing us from accessing your camera to do barcode scanning. You can fix this by doing the following:\n\n1. Close this app.\n\n2. Open the Settings app.\n\n3. Scroll to the bottom and select this app in the list.\n\n4. Turn the Camera on.\n\n5. Open this app and try again."
             
-            var alertButton = "OK"
-            var goAction = UIAlertAction(title: alertButton, style: .default, handler: nil)
+            var goAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            var cancelAction = UIAlertAction(title: "cancel", style: .cancel, handler: nil)
             
             if UIApplication.shared.canOpenURL(URL(string: UIApplication.openSettingsURLString)!) {
                 alertText = "It looks like your privacy settings are preventing us from accessing your camera to do barcode scanning. You can fix this by doing the following:\n\n1. Touch the Go button below to open the Settings app.\n\n2. Turn the Camera on.\n\n3. Open this app and try again."
                 
-                alertButton = "Go"
-                
-                goAction = UIAlertAction(title: alertButton, style: .default, handler: {(alert: UIAlertAction!) -> Void in
+                goAction = UIAlertAction(title: "Go", style: .default, handler: {(alert: UIAlertAction!) -> Void in
                     UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
                 })
             }
             
             let alert = UIAlertController(title: "Error", message: alertText, preferredStyle: .alert)
+            
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                if let popoverController = alert.popoverPresentationController {
+                    alert.addAction(cancelAction)
+                    popoverController.sourceView = self.view
+                    popoverController.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+                    popoverController.permittedArrowDirections = []
+                }
+            }
+            
             alert.addAction(goAction)
             self.present(alert, animated: true, completion: nil)
         }
@@ -202,10 +222,18 @@ class ViewController: UIViewController {
             }
         })
         
-        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
         
         alertPrompt.addAction(confirmAction)
         alertPrompt.addAction(cancelAction)
+        
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            if let popoverController = alertPrompt.popoverPresentationController {
+                popoverController.sourceView = self.view
+                popoverController.sourceRect = CGRect(x: self.view.bounds.midX, y: self.view.bounds.midY, width: 0, height: 0)
+                popoverController.permittedArrowDirections = []
+            }
+        }
         
         present(alertPrompt, animated: true, completion: nil)
     }

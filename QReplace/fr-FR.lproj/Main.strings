@@ -1,0 +1,12 @@
+
+/* Class = "UITextField"; text = "https://myurl.com/QRC"; ObjectID = "BKw-9a-NFR"; */
+"BKw-9a-NFR.text" = "https://myurl.com/QRC";
+
+/* Class = "UILabel"; text = "No QR code detected"; ObjectID = "JJ2-V0-fzK"; */
+"JJ2-V0-fzK.text" = "No QR code detected";
+
+/* Class = "UILabel"; text = "\"QRC\" in the URL below will be replaced with whatever you scan. You can place \"QRC\" wherever you want."; ObjectID = "Q3g-Ar-Z0m"; */
+"Q3g-Ar-Z0m.text" = "\"QRC\" in the URL below will be replaced with whatever you scan. You can place \"QRC\" wherever you want.";
+
+/* Class = "UILabel"; text = "Base URL"; ObjectID = "jpN-8f-oMy"; */
+"jpN-8f-oMy.text" = "Base URL";
