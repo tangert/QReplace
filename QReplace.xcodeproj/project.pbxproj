@@ -14,6 +14,9 @@
 		368C386921D88BFF004B3EB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 368C386721D88BFF004B3EB2 /* LaunchScreen.storyboard */; };
 		368C387421D88BFF004B3EB2 /* QReplaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C387321D88BFF004B3EB2 /* QReplaceTests.swift */; };
 		368C387F21D88BFF004B3EB2 /* QReplaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 368C387E21D88BFF004B3EB2 /* QReplaceUITests.swift */; };
+		63771F3CC9A9009FF79BD378 /* Pods_QReplace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E4ED1BBB25A6B8AD08F65CD /* Pods_QReplace.framework */; };
+		DC6C1D022668E46DD4FA55DD /* Pods_QReplaceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 204DC699CA227C98927B4355 /* Pods_QReplaceTests.framework */; };
+		EE55C0A5D9AA5C50B426627F /* Pods_QReplaceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AD52D6AC74086D308BF5C8C /* Pods_QReplaceUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10FCE9FB1768E62E18D43327 /* Pods-QReplaceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QReplaceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QReplaceTests/Pods-QReplaceTests.release.xcconfig"; sourceTree = "<group>"; };
+		11C406CD983FB8C6D4506D74 /* Pods-QReplaceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QReplaceUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QReplaceUITests/Pods-QReplaceUITests.release.xcconfig"; sourceTree = "<group>"; };
+		13883AB98DD5FE508BC35D13 /* Pods-QReplace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QReplace.release.xcconfig"; path = "Pods/Target Support Files/Pods-QReplace/Pods-QReplace.release.xcconfig"; sourceTree = "<group>"; };
+		204DC699CA227C98927B4355 /* Pods_QReplaceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QReplaceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		368C385B21D88BFD004B3EB2 /* QReplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QReplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		368C385E21D88BFD004B3EB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		368C386021D88BFD004B3EB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,11 @@
 		368C387A21D88BFF004B3EB2 /* QReplaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QReplaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		368C387E21D88BFF004B3EB2 /* QReplaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QReplaceUITests.swift; sourceTree = "<group>"; };
 		368C388021D88BFF004B3EB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AD52D6AC74086D308BF5C8C /* Pods_QReplaceUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QReplaceUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E4ED1BBB25A6B8AD08F65CD /* Pods_QReplace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QReplace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D707253E95F2E06DB817F2C /* Pods-QReplaceUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QReplaceUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QReplaceUITests/Pods-QReplaceUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E7EE2D22866D8CE8AD03A77 /* Pods-QReplaceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QReplaceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QReplaceTests/Pods-QReplaceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F866C3DF73FD788898FBD5C9 /* Pods-QReplace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QReplace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QReplace/Pods-QReplace.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63771F3CC9A9009FF79BD378 /* Pods_QReplace.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC6C1D022668E46DD4FA55DD /* Pods_QReplaceTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE55C0A5D9AA5C50B426627F /* Pods_QReplaceUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +96,8 @@
 				368C387221D88BFF004B3EB2 /* QReplaceTests */,
 				368C387D21D88BFF004B3EB2 /* QReplaceUITests */,
 				368C385C21D88BFD004B3EB2 /* Products */,
+				37B490F7AA7CFE1563D3ECE7 /* Pods */,
+				EBB88EC977E8136EA595A14D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +142,29 @@
 			path = QReplaceUITests;
 			sourceTree = "<group>";
 		};
+		37B490F7AA7CFE1563D3ECE7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F866C3DF73FD788898FBD5C9 /* Pods-QReplace.debug.xcconfig */,
+				13883AB98DD5FE508BC35D13 /* Pods-QReplace.release.xcconfig */,
+				7E7EE2D22866D8CE8AD03A77 /* Pods-QReplaceTests.debug.xcconfig */,
+				10FCE9FB1768E62E18D43327 /* Pods-QReplaceTests.release.xcconfig */,
+				7D707253E95F2E06DB817F2C /* Pods-QReplaceUITests.debug.xcconfig */,
+				11C406CD983FB8C6D4506D74 /* Pods-QReplaceUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EBB88EC977E8136EA595A14D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E4ED1BBB25A6B8AD08F65CD /* Pods_QReplace.framework */,
+				204DC699CA227C98927B4355 /* Pods_QReplaceTests.framework */,
+				4AD52D6AC74086D308BF5C8C /* Pods_QReplaceUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 368C388321D88BFF004B3EB2 /* Build configuration list for PBXNativeTarget "QReplace" */;
 			buildPhases = (
+				8DDD934E65DB609EFAAC9150 /* [CP] Check Pods Manifest.lock */,
 				368C385721D88BFD004B3EB2 /* Sources */,
 				368C385821D88BFD004B3EB2 /* Frameworks */,
 				368C385921D88BFD004B3EB2 /* Resources */,
+				80066CB8B50EA4661B6D54CA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 368C388621D88BFF004B3EB2 /* Build configuration list for PBXNativeTarget "QReplaceTests" */;
 			buildPhases = (
+				83D6C1E3D3620CFCC084737D /* [CP] Check Pods Manifest.lock */,
 				368C386B21D88BFF004B3EB2 /* Sources */,
 				368C386C21D88BFF004B3EB2 /* Frameworks */,
 				368C386D21D88BFF004B3EB2 /* Resources */,
@@ -167,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 368C388921D88BFF004B3EB2 /* Build configuration list for PBXNativeTarget "QReplaceUITests" */;
 			buildPhases = (
+				836378B6CEE26BFB16F73318 /* [CP] Check Pods Manifest.lock */,
 				368C387621D88BFF004B3EB2 /* Sources */,
 				368C387721D88BFF004B3EB2 /* Frameworks */,
 				368C387821D88BFF004B3EB2 /* Resources */,
@@ -250,6 +294,97 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		80066CB8B50EA4661B6D54CA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QReplace/Pods-QReplace-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QReplace/Pods-QReplace-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		836378B6CEE26BFB16F73318 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QReplaceUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83D6C1E3D3620CFCC084737D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QReplaceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DDD934E65DB609EFAAC9150 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QReplace-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		368C385721D88BFD004B3EB2 /* Sources */ = {
@@ -430,16 +565,18 @@
 		};
 		368C388421D88BFF004B3EB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F866C3DF73FD788898FBD5C9 /* Pods-QReplace.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8TWVWBQE3T;
 				INFOPLIST_FILE = QReplace/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tangert.QReplace;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tangert.QReplace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,16 +585,18 @@
 		};
 		368C388521D88BFF004B3EB2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13883AB98DD5FE508BC35D13 /* Pods-QReplace.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8TWVWBQE3T;
 				INFOPLIST_FILE = QReplace/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = tangert.QReplace;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tangert.QReplace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -466,6 +605,7 @@
 		};
 		368C388721D88BFF004B3EB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E7EE2D22866D8CE8AD03A77 /* Pods-QReplaceTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +627,7 @@
 		};
 		368C388821D88BFF004B3EB2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10FCE9FB1768E62E18D43327 /* Pods-QReplaceTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +649,7 @@
 		};
 		368C388A21D88BFF004B3EB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D707253E95F2E06DB817F2C /* Pods-QReplaceUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -528,6 +670,7 @@
 		};
 		368C388B21D88BFF004B3EB2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11C406CD983FB8C6D4506D74 /* Pods-QReplaceUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

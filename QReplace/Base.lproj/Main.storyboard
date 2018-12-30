@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,13 +13,65 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QReplace" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;QRC&quot; in the URL below will be replaced with whatever you scan. You can place &quot;QRC&quot; wherever you want." lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3g-Ar-Z0m">
+                                <rect key="frame" x="16" y="542" width="343" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="HDw-dB-FQn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="https://myurl.com/QRC" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BKw-9a-NFR">
+                                <rect key="frame" x="16" y="617" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No QR code detected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJ2-V0-fzK">
+                                <rect key="frame" x="16" y="36" width="343" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="87y-Fw-VxG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Base URL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpN-8f-oMy">
+                                <rect key="frame" x="16" y="513" width="80" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jpN-8f-oMy" firstAttribute="leading" secondItem="Q3g-Ar-Z0m" secondAttribute="leading" id="0fQ-yN-q4B"/>
+                            <constraint firstItem="JJ2-V0-fzK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1ng-Y7-twK"/>
+                            <constraint firstItem="JJ2-V0-fzK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="HyL-eI-awP"/>
+                            <constraint firstItem="JJ2-V0-fzK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="NlV-0a-aa7"/>
+                            <constraint firstItem="Q3g-Ar-Z0m" firstAttribute="trailing" secondItem="BKw-9a-NFR" secondAttribute="trailing" id="SQz-86-8J4"/>
+                            <constraint firstItem="JJ2-V0-fzK" firstAttribute="trailing" secondItem="Q3g-Ar-Z0m" secondAttribute="trailing" id="Wu1-g5-0nj"/>
+                            <constraint firstItem="Q3g-Ar-Z0m" firstAttribute="top" secondItem="jpN-8f-oMy" secondAttribute="bottom" constant="8" symbolic="YES" id="hOl-GN-WK2"/>
+                            <constraint firstAttribute="bottom" secondItem="BKw-9a-NFR" secondAttribute="bottom" constant="20" symbolic="YES" id="jL4-Ef-tGB"/>
+                            <constraint firstItem="BKw-9a-NFR" firstAttribute="top" secondItem="Q3g-Ar-Z0m" secondAttribute="bottom" constant="8" symbolic="YES" id="suY-fS-DSI"/>
+                            <constraint firstItem="Q3g-Ar-Z0m" firstAttribute="leading" secondItem="BKw-9a-NFR" secondAttribute="leading" id="z9t-8R-GTa"/>
+                            <constraint firstItem="JJ2-V0-fzK" firstAttribute="leading" secondItem="jpN-8f-oMy" secondAttribute="leading" id="zPS-MQ-8t0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="baseURLLabel" destination="jpN-8f-oMy" id="cqa-fw-rSM"/>
+                        <outlet property="messageLabel" destination="JJ2-V0-fzK" id="nzT-UJ-hkw"/>
+                        <outlet property="urlEntryDescriptionLabel" destination="Q3g-Ar-Z0m" id="yAm-iW-mrO"/>
+                        <outlet property="urlEntryField" destination="BKw-9a-NFR" id="N3x-gQ-8VV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
